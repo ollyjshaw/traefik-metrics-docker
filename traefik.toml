@@ -1,6 +1,7 @@
-[api]
-
 [docker]
+
+[api]
+entryPoint = "api"
 
 [metrics]
   [metrics.prometheus]
@@ -10,7 +11,7 @@
 [entryPoints]
   [entryPoints.http]
     address = ":8081"
-  [entryPoints.api]
-    address = ":8090"
   [entryPoints.metrics]
     address = ":9145"
+  [entryPoints.api]
+    address = ":8090"
